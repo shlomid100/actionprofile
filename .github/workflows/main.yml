@@ -56,6 +56,6 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: mvn checkstyle:checkstyle
 
-      - name: Run tests on other branches
+      - name: Run tests on other branches 
         if: github.ref != 'refs/heads/main'
         run: echo "Skipping unit tests and code analysis"
